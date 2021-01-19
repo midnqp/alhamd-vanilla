@@ -17,12 +17,14 @@ Alhamd Vanilla demonstrates deeply beneficial design architectures for efficienc
 --- Maintainability
 Module-Oriented Programming, in opposition to OOP, for scalable applications. Don't modularise/split unless things are way too unmaintainable.
 
--- Performance: Most JS frameworks are built with the help of Node.js, and are slow mostly because they add too much abstraction. 
+-- Performance
+Most JS frameworks are built with the help of Node.js, and are slow mostly because they add too much abstraction. 
       "Too many tiny units of abstraction get separated 
        from context, hence reducing meaning."
 Rather, create abstractions only when you are sure that: not creating this abstraction will extensively complexify things.
 
--- Least Polymorphism: Polymorphism is Android Open Source Project (AOSP) being 250 GB, Chromium Project being 50 GB - to support all the OS at once in a single repo. This download corpus overhead is surely a high entry barrier for contributing to their projects. 
+-- Least Polymorphism
+Polymorphism is Android Open Source Project (AOSP) being 250 GB, Chromium Project being 50 GB - to support all the OS at once in a single repo. This download corpus overhead is surely a high entry barrier for contributing to their projects. 
 Instead, make branches & releases specific for OS. For reusing code among repos intended for specific OS, create symbolic links.
       "Do one thing - do it properly." - Unix
 

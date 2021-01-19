@@ -1,5 +1,7 @@
-# alhamd-vanilla: A vanilla framework for those who hate frameworks  #
-# vim: ts=2 sw=2 et
+## Alhamd Vanilla
+### A vanilla framework for those who strive for efficiency
+<!-- vim: ts=2 sw=2 et -->
+<hr>
 
 Alhamd Vanilla demonstrates deeply beneficial design architectures, and a more meaningful opposition to OOP. 
 

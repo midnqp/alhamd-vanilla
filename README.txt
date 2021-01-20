@@ -132,3 +132,14 @@ file names - consistence & speciality
 * "There should be (exactly) 1 approach to do something - most efficiently."
 																- Rob Pike (Golang creator)
 
+
+
+
+
+_______ IMPLEMENTATIONS _______
+
+[https://github.com/midnqp/DARIS.js]
+		The simpler StackOverFlow using Node.js
+
+[https://github.com/midnqp/alhamd-server.c]
+		Fully-fledged server in GNU C

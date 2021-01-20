@@ -3,10 +3,10 @@
 
 
 alhamd-vanilla 
-   |-- Purpose of Life
-   |-- Architecture
-   |-- Coding Styles
-   |-- Implementations
+	 |-- Purpose of Life
+	 |-- Architecture
+	 |-- Coding Styles
+	 |-- Implementations
 
 
 
@@ -21,18 +21,18 @@ Module-Oriented Programming, in opposition to OOP, for scalable applications. Do
 
 -- Performance
 Most JS frameworks are built with the help of Node.js, and are slow mostly because they add too much abstraction. 
-      "Too many tiny units of abstraction get separated 
-       from context, hence reducing meaning."
+			"Too many tiny units of abstraction get separated 
+			 from context, hence reducing meaning."
 Rather, create abstractions only when you are sure that: not creating this abstraction will extensively complexify things.
 
 -- Least Polymorphism
 Polymorphism is Android Open Source Project (AOSP) being 250 GB, Chromium Project being 50 GB - to support all the OS at once in a single repo. This download corpus overhead is surely a high entry barrier for contributing to their projects. 
 Instead, make branches & releases specific for OS. For reusing code among repos intended for specific OS, create symbolic links.
-      "Do one thing - do it properly." - Unix
+			"Do one thing - do it properly." - Unix
 
 -- Properly-defined Restrictions are your Saviors
 Tell me what makes Python slow, beside being interpreted. Dynamic typing. Use Cython, declare data types - suddenly things start to fly at speed. If browser rendering engines had restrictions on HTML, Chromium Blink developers could sleep a lot more hours.
-      "CONSISTENCY is much important than SAVING FEW KEYSTROKES."
+			"CONSISTENCY is much important than SAVING FEW KEYSTROKES."
 
 
 
@@ -77,4 +77,58 @@ Project architecture isn't what it's made of. Project architecture is what it's 
 
 _______ CODING STYLE _______
 
-Alhamd Vanilla is all about super-fast development, super-fast platforms/applications, efficiency. Alhamd Vanilla strives to achieve maximum efficiency, while caring about the developer.
+Alhamd Vanilla is all about super-fast development, super-performing application/projects, dexterous maintaining, and efficiency. Alhamd Vanilla strives to achieve maximum efficiency, while caring about the developer.
+
+
+
+[[ Naming ]]
+variables - no underscore, may have capital letter. Must be consistent.
+					- elaborate acronymous variables. Not preferred at all.
+
+			let IndexHTML = ...; 
+			var cuteVarName = ...; 
+			var eacVar = ...;		 // elaborate acronymous variables 
+
+
+functions - must have underscores, no capital letters. Must be consistent.
+							
+			render_index_page:	()=>{...}
+			render_questionview_page:	 ()=>{...}
+			render_questionwrite_page:	 ()=>{...}
+
+			exec_mysql(sql, callback_func) {...}
+
+
+modules/libs - may have underscore, ALL CAPS. Must be consistent.
+
+			const LIBAR = require('./modules/lib-avoidrepitition.js');
+			const FS = require('fs');
+			const DARIS_QUESTION_VIEW = require('./modules/rendering/question_view.js');
+
+
+file names - consistence & speciality
+
+			DarisMainServer.js
+			daris/question/question_view.js
+			daris/question/question_write.js
+			modules/lib-avoidrepitition.js
+
+
+
+
+[[ Each File ]]
+*	Break lines exceeding 100, unless not breaking increases readability.
+* No, do not split a feature/module too much.
+* A file can be big, it "must do one thing, and do it properly"
+
+					`daris/profile/profile.html`
+					`daris/question/view.html`
+					`daris/navbar.js`
+
+
+
+
+[[ Ethics ]]
+* "There should be (exactly) 1 approach to do something - most efficiently."
+																- Rob Pike (Golang creator)
+

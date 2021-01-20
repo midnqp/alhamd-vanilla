@@ -15,7 +15,9 @@ Alhamd Vanilla demonstrates deeply beneficial design architectures for efficienc
 * Node.js uses V8, the fastest Javascript engine we know and love.
 
 --- Maintainability
-Module-Oriented Programming, in opposition to OOP, for scalable applications. Don't modularise/split unless things are way too unmaintainable.
+Module-Oriented Programming, in opposition to OOP, for scalable applications. Don't modularise/split unless things are way too unmaintainable. Without OOP, some perceive this world as a lie, but:
+			"GNU C doesn't have OOP. Linux kernel is built in C, without 
+			 OOP. And, linux kernel has 15 million lines of code."
 
 -- Performance
 Most JS frameworks are built with the help of Node.js, and are slow mostly because they add too much abstraction. 
@@ -28,8 +30,51 @@ Polymorphism is Android Open Source Project (AOSP) being 250 GB, Chromium Projec
 Instead, make branches & releases specific for OS. For reusing code among repos intended for specific OS, create symbolic links.
       "Do one thing - do it properly." - Unix
 
--- Properly-defined Restrictions are your Saviors: Tell me what makes Python slow, beside being interpreted. Dynamic typing. Use Cython, declare data types - suddenly things start to fly at speed. If browser rendering engines had restrictions on HTML, Chromium Blink developers could sleep a lot more hours.
+-- Properly-defined Restrictions are your Saviors
+Tell me what makes Python slow, beside being interpreted. Dynamic typing. Use Cython, declare data types - suddenly things start to fly at speed. If browser rendering engines had restrictions on HTML, Chromium Blink developers could sleep a lot more hours.
       "CONSISTENCY is much important than SAVING FEW KEYSTROKES."
 
 
 
+
+
+_______ ARCHITECTURE _______
+
+Project architecture isn't what it's made of. Project architecture is what it's about. The directories/structures of your  application/project about a payment gateway, must scream at you that it's a payment gateway. And you as a developer will do everything to make your project scream. You are obliged to add structuring like this in your README:
+				
+				project-name
+					|-- MainServer.c
+					|-- modules
+								|-- lib-avoidrepitition.js
+								|-- lib-alhamd-vanilla.h
+								|-- lib-python-builtins.h
+								|-- rendering
+											|-- index.js
+											|-- question_view.js
+											|-- question_write.js
+											|-- profile_index.js
+											|-- profile_contributions.js
+											|-- profile_settings.js
+								|-- ajax
+											|-- login.js
+											|-- register.js
+											|-- comment.js
+											|-- question_write.js
+					|-- project
+								|-- index
+											|-- index.html
+								|-- question
+											|-- write.html
+											|-- view.html
+											|-- write.css
+								|-- style.css
+								|-- navbar.js
+								|-- footer.js
+
+
+
+
+
+_______ CODING STYLE _______
+
+Alhamd Vanilla is all about super-fast development, super-fast platforms/applications, efficiency. Alhamd Vanilla strives to achieve maximum efficiency, while caring about the developer.

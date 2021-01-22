@@ -3,10 +3,10 @@
 
 
 alhamd-vanilla 
-	 |-- Purpose of Life
-	 |-- Architecture
-	 |-- Coding Styles
-	 |-- Implementations
+  |-- Purpose of Life
+  |-- Architecture
+  |-- Coding Styles
+  |-- Implementations
 
 
 

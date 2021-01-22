@@ -17,7 +17,7 @@ Alhamd Vanilla demonstrates deeply beneficial design architectures for efficienc
 --- Maintainability
 Module-Oriented Programming, in opposition to OOP, for scalable applications. Don't modularise/split unless things are way too unmaintainable. Without OOP, some perceive this world as a lie, but:
 			"GNU C doesn't have OOP. Linux kernel is built in C, without 
-			 OOP. And, linux kernel has 15 million lines of code."
+			 OOP. 15 million SLOC - and Linux runs on everything: Android to supercomputers."
 
 -- Performance
 Most JS frameworks are built with the help of Node.js, and are slow mostly because they add too much abstraction. 

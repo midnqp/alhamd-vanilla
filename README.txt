@@ -118,6 +118,7 @@ file names - consistence & speciality
 
 [[ Each File ]]
 * Break lines exceeding 100, unless not breaking increases readability.
+  Wider code isn't a problem. They're explanatory.
 * No, do not split a feature/module too much.
 * A file can be big, it "must do one thing, and do it properly"
 

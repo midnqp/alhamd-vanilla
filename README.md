@@ -19,7 +19,7 @@ Softwares built using this framework will be able to:
 
 
 ## Processes & Components
-- A user sends a request to `Server.js`. We execute the server-side code inside HTML files. And send the response.
+- A user sends a request to `Server.js`. We __execute the server-side code inside HTML files__. And send the response.
 - Provide a CLI, and also hooks to use inside code for:
   - Creating/Viewing/Managing scheduled Tasks
   - Mass Mailing

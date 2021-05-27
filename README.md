@@ -40,28 +40,26 @@ Websites/softwares built using this framework will:
 
 
 # TODO
-1. Route using `ROUTE_STRICT` and `ROUTE_REDIRECT`
-to fix the `./Public.ico.html not found` problem.
+- Route using `ROUTE_STRICT` and `ROUTE_REDIRECT` to fix the `./Public.ico.html not found` problem.
 
-2. Vanilla Javascript: a little infrastructure to 
-reuse UI components.
-    - frameworkless-rui-main.js
-    - everything else are components
+- Vanilla Javascript: a little infrastructure to reuse UI components.
+  - frameworkless-rui-main.js
+  - everything else are components
 
-3. vanilla-min.js
-    - Ajax
-    - lib-frameworkless: Ajax management
+- vanilla-min.js
+  - Ajax
+  - lib-frameworkless: Ajax management
 
-4. Implement DOM minimal manipulation
+- Implement DOM minimal manipulation
 
-5. PWA support
+- PWA support
 
-6. lib-frameworkless: Easy db queries
+- lib-frameworkless: Easy db queries
 
-7. CLI
-    - implement hooks for Tasks!
-    - implement mails
-    - implement logging
+- CLI
+  - implement hooks for Tasks!
+  - implement mails
+  - implement logging
 
-0. __The Last TODO__ Rewrite in order to ensure 
+- __The Last TODO__ Rewrite in order to ensure 
 simplest/cleanest configuration.

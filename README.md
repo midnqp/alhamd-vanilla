@@ -29,10 +29,39 @@ Websites/softwares built using this framework will:
 
 # `Example Usage`
 - An implementation of this framework is [StacksMergeOne](https://github.com/midnqp/StacksMergeOne), which merges multiple information/answers for a question into one perfect answer.
-- As a website/software developer of this framework:
-	- Your task is to write HTML, CSS, JS, and Node.js
+- [Build notes](https://midnqp.github.io/midnqp/blog/stacksmergeone-build-notes/) of StacksMergeOne explains how __simple__ using this framework is.
+- As a website/software developer using this framework, you will:
+	- Build elegant websites/softwares for end-users
 	- Send notifications/emails to targeted users
 	- Automate works, and sleep well
 	- If you fear, something may go wrong, enable logging
-- Parameter `dir` of `Route()` specifies the directory where HTML files are located. Default is the same directory as `Server`.
 
+
+
+
+# TODO
+1. Route using `ROUTE_STRICT` and `ROUTE_REDIRECT`
+to fix the `./Public.ico.html not found` problem.
+
+2. Vanilla Javascript: a little infrastructure to 
+reuse UI components.
+    - frameworkless-rui-main.js
+    - everything else are components
+
+3. vanilla-min.js
+    - Ajax
+    - lib-frameworkless: Ajax management
+
+4. Implement DOM minimal manipulation
+
+5. PWA support
+
+6. lib-frameworkless: Easy db queries
+
+7. CLI
+    - implement hooks for Tasks!
+    - implement mails
+    - implement logging
+
+0. __The Last TODO__ Rewrite in order to ensure 
+simplest/cleanest configuration.

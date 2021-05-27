@@ -29,14 +29,11 @@ Websites/softwares built using this framework will
 
 # `Example Usage`
 - An implementation of this framework is [StacksMergeOne](https://github.com/midnqp/StacksMergeOne), which merges multiple information/answers for a question into one perfect answer.
-<<<<<<< HEAD
 - [Build notes](https://midnqp.github.io/midnqp/blog/stacksmergeone-build-notes/) of StacksMergeOne explains how __simple__ using this framework is.
 - As a website/software developer using this framework, you will:
 	- Build elegant websites/softwares for end-users
-=======
 - As a website/software developer of this framework
 	- Your task is to write HTML, CSS, JS, and Node.js
->>>>>>> f8435a111bc182f9e72bda3a0b1583af7ed79f0c
 	- Send notifications/emails to targeted users
 	- Automate works, and sleep well
 	- If you fear, something may go wrong, enable logging

@@ -10,7 +10,7 @@ Aims of this framework
 
 
 # `Specifications`
-Websites/softwares built using this framework will
+Websites/softwares built using `midnqp/frameworkless` will
 - Serve enormous amount of requests
 - __React-like minimal DOM manipulation__, to prevent reload of webpage
 - Reuse UI components
@@ -30,38 +30,30 @@ Websites/softwares built using this framework will
 # `Example Usage`
 - An implementation of this framework is [StacksMergeOne](https://github.com/midnqp/StacksMergeOne), which merges multiple information/answers for a question into one perfect answer.
 - [Build notes](https://midnqp.github.io/midnqp/blog/stacksmergeone-build-notes/) of StacksMergeOne explains how __simple__ using this framework is.
-- As a website/software developer using this framework, you will:
-	- Build elegant websites/softwares for end-users
-- As a website/software developer of this framework
-	- Your task is to write HTML, CSS, JS, and Node.js
-	- Send notifications/emails to targeted users
-	- Automate works, and sleep well
-	- If you fear, something may go wrong, enable logging
 
 
 
 
-# TODO
+# `TODO`
 - Route using `ROUTE_STRICT` and `ROUTE_REDIRECT` to fix the `./Public.ico.html not found` problem.
 
 - Vanilla Javascript: a little infrastructure to reuse UI components.
-  - frameworkless-rui-main.js
+  - `frameworkless-rui-main.js`
   - everything else are components
 
 - vanilla-min.js
   - Ajax
-  - lib-frameworkless: Ajax management
+  - `lib-frameworkless`: Ajax management
 
 - Implement DOM minimal manipulation
 
 - PWA support
 
-- lib-frameworkless: Easy db queries
+- `lib-frameworkless`: Easy db queries
 
 - CLI
   - implement hooks for Tasks!
   - implement mails
   - implement logging
 
-- __The Last TODO__ Rewrite in order to ensure 
-simplest/cleanest configuration.
+- __The Last TODO__ Rewrite in order to ensure simplest configuration and usage for developers.

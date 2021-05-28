@@ -26,8 +26,8 @@ Websites/softwares built using `midnqp/frameworkless` will:
 
 
 # `Example Usage`
-- An implementation of this framework is [StacksMergeOne](https://github.com/midnqp/StacksMergeOne), which merges multiple information/answers for a question into one perfect answer.
-- [Build notes](https://midnqp.github.io/midnqp/blog/stacksmergeone-build-notes/) of StacksMergeOne explains how __simple__ using this framework is.
+- An implementation of this framework will be [StacksMergeOne](https://github.com/midnqp/StacksMergeOne), which merges multiple information/answers for a question into one perfect answer.
+- [Build notes](https://midnqp.github.io/midnqp/blog/stacksmergeone-build-notes/) of StacksMergeOne will explain how __simple__ using this framework is.
 
 
 

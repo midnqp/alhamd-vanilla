@@ -1,16 +1,14 @@
 # `midnqp/frameworkless`
-The fastest framework to build scalable web softwares in miniscule amount of time. Handles 200,000 requests per second.
-
-Aims of this framework
-- Be featherweight and fast and have a simple codebase.
-- Developers will not spend time learning this framework. If you are good at programming, then you are good at this framework.
-- Developers will focus on designing, and business logic. Not on: why is the website slow, or how to send proper mime types. This frameworks deals all that. Want a feature? Create an issue.
+Aims of this framework:
+- Be _featherweight_ and fast and have a simple codebase.
+- Developers shall __not__ spend time learning this framework. If you're good at programming, then you're good at this framework.
+- Developers will focus on design and business logic. Not on: why is the website slow, or how to set proper mime types. This frameworks deals all that. Want a feature? Create an issue.
 
 
 
 
 # `Specifications`
-Websites/softwares built using `midnqp/frameworkless` will
+Websites/softwares built using `midnqp/frameworkless` will:
 - Serve enormous amount of requests
 - __React-like minimal DOM manipulation__, to prevent reload of webpage
 - Reuse UI components

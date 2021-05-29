@@ -1,8 +1,13 @@
 # `midnqp/frameworkless`
 Aims of this framework:
-- Be _featherweight_ and fast and have a simple codebase.
-- Developers shall __not__ spend time learning this framework. If you're good at programming, then you're good at this framework.
-- Developers will focus on design and business logic. Not on: why is the website slow, or how to set proper mime types. This frameworks deals all that. Want a feature? Create an issue.
+- Be _featherweight_ and _lightspeed fast_.
+- Developers shall not spend time learning this framework. __If you're good at programming, then you're great at this framework__.
+- Developers will rather focus on design and business logic. Not on: why is the website slow, or how to set proper mime types. This framework __deals all your hassle__.
+<p align=center>
+  <img src="https://raw.githubusercontent.com/midnqp/midnqp/main/cdn/frameworkless_architecutre.png" height=273px width=212px>
+</p>
+
+<p align=center><i>Architecture of a <b>production</b> blog platform. Having server-side Javascript inside HTML files.</i></p>
 
 
 

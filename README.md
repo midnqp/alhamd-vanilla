@@ -1,4 +1,4 @@
-# `midnqp/frameworkless`
+# `midnqp\frameworkless`
 Aims of this framework:
 - Be _featherweight_ and _lightspeed fast_.
 - Developers shall not spend time learning this framework. __If you're good at programming, then you're great at this framework__.
@@ -13,7 +13,7 @@ Aims of this framework:
 
 
 # `Specifications`
-Websites/softwares built using `midnqp/frameworkless` will:
+Websites/softwares built using `midnqp\frameworkless` will:
 - Serve enormous amount of requests
 - __React-like minimal DOM manipulation__, to prevent reload of webpage
 - Reuse UI components

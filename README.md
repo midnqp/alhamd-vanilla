@@ -38,8 +38,6 @@ Websites/softwares built using `midnqp\frameworkless` will:
 
 
 # `TODO`
-- Route using `ROUTE_STRICT` and `ROUTE_REDIRECT` to fix the `./Public.ico.html not found` problem.
-
 - Vanilla Javascript: a little infrastructure to reuse UI components.
   - `frameworkless-rui-main.js`
   - everything else are components

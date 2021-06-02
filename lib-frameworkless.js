@@ -17,7 +17,7 @@ function Init(initObject) {
 		['viewdir', './Public'],
 		['compdir', './Public/Comp'],
 	]
-	handleInitObject(initObject, idefs)  //global vars
+	handleInitObject(initObject, idefs)  //set global vars
 
 
 	res.endRender = (filename)=>{
@@ -54,7 +54,6 @@ function handleInitObject(initObject, idefs) {
 	}
 	Object.entries(initObject).forEach(
 		([varName, val])=>{
-			print(varName, val)
 			global[varName] = val
 		}
 	)
@@ -132,18 +131,44 @@ function Route(req, res) {
 function performRouting() {
 	let vurl = viewdir + Url 		// Url with viewdir
 	// ./public/something/somefile/?param=abcd123&id=777
+	routeChanged = false
 
-	if (Url.endsWith('/')) {
-		// render the HTML file and send response, be it Ajax
-		filename = vurl.slice(0, vurl.lastIndexOf('/')) + '.html'
+
+
+	_doRouteChange(ROUTE_REDIRECT)
+
+
+	
+	if (vurl.endsWith('/')) {  // won't work at future with get/post params
+		// render the HTML file and send response
+		let filename = vurl.slice(0, vurl.lastIndexOf('/')) + '.html'
 		res.endRender(filename)
 	}
-	else if (isWebComponent(vurl))	res.endComp(file)
+	else if (isWebComponent(vurl) || routeChanged === true)	{
+		res.endComp(vurl)
+	}
 	else if (!isWebComponent(vurl)) {
 		// redirect /about to /about/
-		res.writeHead(302, {'Location' : req.url + '/'})
+		res.writeHead(302, {'Location' : Url + '/'})
 		res.end()
 	}
+}
+
+
+
+
+function _doRouteChange(varName) {
+	//if (ROUTE_ALL !== undefined && ROUTE_REDIRECT !== undefined) throw "FrameworkLessConfigurationError: ROUTE_ALL and ROUTE_REDIRECT both cannot co-exist."
+	
+
+	if (typeof(varName) !== 'undefined') {
+		let rsu = varName[Url]
+		if (rsu !== undefined) {
+			vurl = rsu + Url
+			routeChanged = true
+		}
+	}
+
 }
 
 

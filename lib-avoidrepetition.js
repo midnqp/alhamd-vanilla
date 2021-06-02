@@ -31,7 +31,7 @@ function fileRead(fileName, callback) {
 function print() {
 	if (!process.stdout || !util.isFunction(process.stdout.write)) 
 		throw new TypeError('Console expects a writable stream instance')
-	process.stdout.write(util.format.apply(this, arguments))
+	process.stdout.write(util.format.apply(this, arguments) + '\n')
 }
 
 

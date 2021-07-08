@@ -8,7 +8,8 @@ module.exports = {
 	fs : fs,
 	path: path,
 	print : print,  //console.log is too long to type
-	requireGlobal : requireGlobal,  //adds everything of exported to global scope
+	requireGlobal : requireGlobal,  //adds everything of exported to global scope,
+	evalRequire: evalRequire, 	// Parses and processes 'require' statements in html string.
 }
 
 
@@ -40,3 +41,32 @@ function requireGlobal(moduleName) {
 		([name, exported]) => global[name] = exported 
 	)
 }
+
+/**
+ * @author Spiff Jekey-Green
+ */
+ function evalRequire(str) {
+    const reg = /<\s*require\s*>([^<]*)<\s*\/\s*require\s*>/gim;
+    str = str.replace(reg, (i) => {
+        return requireComp(reg.exec(i)[1].trim());
+    })
+    return str;
+}
+
+function requireComp(src = "") {
+    try {
+        const content = fs.readFileSync(path.join(__dirname, src), {encoding: "utf-8"});
+        return content;
+    } catch {
+        // throw new ReferenceError(`'${src}' file not found`);
+        // console.log('File not found')
+        // Do proper logging here.
+        return "";
+    }
+}
+
+// const reqStr = `
+// <require>/Main.js</require>
+// The End of file`;
+
+// console.log(evalRequire(reqStr));

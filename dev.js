@@ -1,4 +1,7 @@
 /* HOT RELOAD FUNCTION */
+/**
+ * @description This file will run the main server and reload the server on saving/modifying/creating/deleting a file in its directory.
+ */
 const childProcess = require("child_process");
 const path = require("path");
 const fs = require("fs");
@@ -19,6 +22,10 @@ const getExtension = str => {
 
 runServer(false);
 
+/**
+ * @todo   Use colored output for hot reload function
+ * @param {Boolean} restarting
+ */
 function runServer(restarting = true) {
     server = childProcess.fork(path.join(__dirname, "Main.js"));
     console.log("-".repeat(35));

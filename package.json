@@ -1,15 +1,14 @@
 {
   "name": "frameworkless",
   "version": "0.0.0",
-  "description": "A simple yet flexible framework",
+  "description": "The fastest performing Node.js framework for Web development (Beginner-friendly 🙋 and vanilla🍦 and rapid development 💻)",
   "main": "Main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node dev"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SpiffGreen/frameworkless.git"
+    "url": "git+https://github.com/midnqp/frameworkless.git"
   },
   "keywords": [
     "frameworkless",
@@ -21,7 +20,7 @@
   "author": "Midnqp",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SpiffGreen/frameworkless/issues"
+    "url": "https://github.com/midnqp/frameworkless/issues"
   },
-  "homepage": "https://github.com/SpiffGreen/frameworkless#readme"
+  "homepage": "https://github.com/midnqp/frameworkless#readme"
 }

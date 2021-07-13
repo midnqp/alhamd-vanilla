@@ -1,0 +1,27 @@
+{
+  "name": "frameworkless",
+  "version": "0.0.0",
+  "description": "A simple yet flexible framework",
+  "main": "Main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpiffGreen/frameworkless.git"
+  },
+  "keywords": [
+    "frameworkless",
+    "javascript",
+    "webserver",
+    "nodejs",
+    "html"
+  ],
+  "author": "Midnqp",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SpiffGreen/frameworkless/issues"
+  },
+  "homepage": "https://github.com/SpiffGreen/frameworkless#readme"
+}

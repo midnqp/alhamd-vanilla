@@ -1,0 +1,26 @@
+{
+  "name": "frameworkless",
+  "version": "0.0.0",
+  "description": "The fastest performing Node.js framework for Web development (Beginner-friendly 🙋 and vanilla🍦 and rapid development 💻)",
+  "main": "Main.js",
+  "scripts": {
+    "dev": "node dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/midnqp/frameworkless.git"
+  },
+  "keywords": [
+    "frameworkless",
+    "javascript",
+    "webserver",
+    "nodejs",
+    "html"
+  ],
+  "author": "Midnqp",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/midnqp/frameworkless/issues"
+  },
+  "homepage": "https://github.com/midnqp/frameworkless#readme"
+}
